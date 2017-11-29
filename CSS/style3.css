@@ -1,0 +1,666 @@
+/*Index2 style*/
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i,800');
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#menucontainer:hover {
+    margin-left: -690px;
+}
+
+#menucontainer{
+	position: fixed;
+	width: 600px;
+	height: 710px;
+	z-index: 6;
+	margin-left: -900px;
+	-webkit-transition: margin-left 1s;
+	transition: margin-left 1s;	
+}
+
+#mainmenu {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	height: 700px;
+	width: 400px;
+	background-color: white;
+	border: solid rgba(100,100,100,1);
+	box-shadow: 2px, 2px, 5px rgba(0,0,0,0.3);
+	border-width: 2px;
+	z-index: 7;
+	justify-content: space-between;
+}
+
+#menubutts {
+	margin-left: 315px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width: 18%;
+}
+
+@keyframes flash {
+  0% {
+    opacity: .0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuduck {
+	height: 30px;
+	width: 30px;
+	margin-top: 130px;
+	margin-left: 20px;
+	position: fixed;
+	z-index: 5;
+	animation: flash;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-delay: 2s;
+}
+
+.pageheading {
+	position: absolute;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	width: 100%;
+	font-size: 100px;
+	color: rgb(39, 39, 40);
+	margin-bottom: -100px;
+	z-index: 4;
+}
+
+.seasonheading {
+	/*position: absolute;*/
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	/*width: 100%;*/
+	font-size: 100px;
+	color: rgb(39, 39, 40);
+	margin-bottom: -100px;
+	z-index: 4;
+}
+
+.recipeheading {
+	/*position: absolute;*/
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	/*width: 100%;*/
+	font-size: 100px;
+	color: white;
+	margin-bottom: -100px;
+	z-index: 4;
+}
+
+.treeheading {
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 100px;
+	color: rgb(39, 39, 40);
+	margin-bottom: -100px;
+	z-index: 4;
+}
+
+#logocontain {
+	width: 100%;
+	/*flex-wrap: wrap;*/
+	z-index: 1;
+}
+
+#logo {
+	position: absolute;
+	/*margin-top: 200px;*/
+ 	width: 100%;
+ 	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+ 	z-index: 1;
+	/*height: 30%;*/
+	/*flex-wrap: wrap;*/
+
+}
+
+.video {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+ 	}
+
+.videomig {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*overflow: hidden;*/
+    z-index: -1;
+
+ 	}	
+	
+.bgvideo {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoanat {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+ 	}
+
+.bgvideoanat {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videotree {
+	position: absolute;
+    top: 0;
+    left: 0;
+    /*min-height: 200%;*/
+    overflow: hidden;
+    min-height: 100%;
+    z-index: -1;
+ 	}
+
+.bgtree {
+	min-height: 200%;
+}
+
+#paragraph{
+	margin-top: 80px;
+	margin-left: 100px;
+	margin-right: 100px;
+	width: 70%
+	font-family:'EB Garamond', serif;	
+	font-size: 18px;
+	justify-content: center;
+	text-align: center;
+}
+
+.wholetree {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	width: 100%;
+	height: 710px;
+	opacity: .5;
+}
+
+.line {
+	display: flex;
+
+	width: 100%;
+}
+
+.row5a {
+	font-family:'EB Garamond', serif;	
+	font-size: 26px;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex:1;
+	border-width: 2px;
+	height: 20px;
+	width: 150px;
+}
+
+.row5b {
+	font-family:'EB Garamond', serif;	
+	font-size: 26px;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex:1;
+	border-width: 2px;
+	height: 20px;
+	width: 150px;
+}
+
+.row5patha {
+	font-family:'EB Garamond', serif;	
+	font-size: 26px;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex:1;
+	border-width: 2px;
+	height: 20px;
+	width: 150px;
+}
+
+.row5pathb {
+	font-family:'EB Garamond', serif;	
+	font-size: 26px;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex:1;
+	border-width: 2px;
+	height: 20px;
+	width: 150px;
+}
+
+.row6 {
+	font-family:'EB Garamond', serif;	
+	font-size: 26px;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex:1;
+	border-width: 2px;
+	height: 35px;
+	width: 150px;	
+}
+
+.rowpath {
+	font-family:'EB Garamond', serif;	
+	font-size: 26px;
+	justify-content: center;
+	text-align: center;
+	flex-direction: row;
+	flex:1;
+	background-color: rgba(255,255,255, .7);
+	border: solid rgba(30,30,30,1);
+	border-width: 2px;
+	height: 35px;
+	width: 150px;	
+}
+
+.container {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 736px;
+}
+
+.recipecontainer {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 606px;
+}
+
+.space {
+  width: 13%;
+  position: static;
+  flex-wrap: wrap;
+  /*background-color: orange;*/
+  margin-bottom: 40px;
+}
+
+.navbutt {
+	margin-top: 60px;
+	margin-left: 20px;
+	color: grey;
+}
+
+.define {
+  background-image: url("../images/duck-4 copy.png");
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 74%;
+  flex-wrap: wrap;
+}
+
+.marginright {
+	background-color: red;
+	width: 13%;
+}
+
+.slide-click {
+	background-color: rgba(255,255,255, .7);
+	border-radius: 45px;
+	cursor: pointer;
+}
+.maintitle {
+	font-family:'EB Garamond', serif;	
+	font-size: 90px;
+    width: 100%;
+    text-align: center;
+    /*   margin: 0;*/
+    z-index: 3;
+    
+}
+
+.definitiontext {
+		font-family:'EB Garamond', serif;
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	#deftitle {
+		font-family:'EB Garamond', serif;
+		font-style: bold;
+		font-size: 60px;
+		margin-bottom: 0px;
+	}
+	#defpron {
+		font-family:'EB Garamond', serif;
+		font-style: italic;
+		font-size: 50px;
+		margin: 0;
+	}
+
+
+.foodpics {
+	border: solid rgba(100,100,100,1);
+
+}
+
+.ingredients {
+	font-family: 'EB Garamond', serif;
+	text-align: left;
+}
+
+.buttons {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 0px;
+	margin-top: 190px;
+}
+
+.buttondeet1:hover {
+    opacity: 1;
+}
+
+.buttondeet1 {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'EB Garamond', serif;
+	font-size: 28px;
+	justify-content: center;
+	color: white;
+	background-image: url(../images/recipe-confit.png);
+	background-position: center;
+	width: 500px;
+	height: 120px;
+	margin: 10px;
+	opacity: .5;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;	
+}
+
+.buttondeet2:hover {
+    opacity: 1;
+}
+.buttondeet2 {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'EB Garamond', serif;
+	font-size: 28px;
+	justify-content: center;
+	color: white;
+	background-image: url(../images/recipe-foie.png);
+	background-position: center;
+	width: 500px;
+	height: 120px;
+	margin: 10px;
+	opacity: .5;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;	
+}
+
+.buttondeet3:hover {
+    opacity: 1;
+}
+.buttondeet3 {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'EB Garamond', serif;
+	font-size: 28px;
+	justify-content: center;
+	color: white;
+	background-image: url(../images/recipe-peking.png);
+	background-position: center;
+	width: 500px;
+	height: 120px;
+	margin: 10px;
+	opacity: .5;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;	
+}
+.buttondeet4:hover {
+    opacity: 1;
+}
+.buttondeet4 {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'EB Garamond', serif;
+	font-size: 28px;
+	justify-content: center;
+	color: white;
+	background-image: url(../images/recipe-breast.png);
+	background-position: center;
+	width: 500px;
+	height: 120px;
+	margin: 10px;
+	opacity: .5;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;	
+}
+
+#totop {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 0px;
+	margin-top: 190px;
+	justify-content: flex-end;
+	margin-top: 670px;
+	margin-left: -50px;
+}
+
+#totopbutt {
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	font-family: 'EB Garamond', serif;
+	font-size: 16px;
+	font-weight: bold;
+	border: solid rgba(100,100,100,1);
+	border-width: 2px;
+	border-radius: 45px;
+
+}
+
+.recipe {
+	justify-content: space-between;
+}
+
+.recipes {
+	/*background-color: grey;*/
+	width: 74%;
+}
+
+table {
+	border-width: 2px;
+	/*border: solid rgba(100,100,100,1);*/
+	border-bottom: solid rgba(100,100,100,1);
+	margin-bottom: 0px;
+}
+.onepg{
+	position: absolute;
+    width: 80%;
+    height: 65%;
+    display: flex;
+    justify-content: left;
+	background-color: rgba(132, 134, 137, .8);
+	border: solid rgba(100,100,100,1);
+	border-width: 2px;
+	margin-top: 225px;
+}
+.gifs {
+	
+	height: 90%;
+	margin: 2%;
+	background-color: grey;
+	
+	justify-content: left;
+}
+
+.migrationinfo {
+	font-family: 'EB Garamond', serif;
+	color: white;
+	padding: 2%;
+	padding-right: 4%;
+}
+.slides {
+	width: 80%;
+	display: flex;
+	
+	align-items: center;
+	justify-content: center;
+	margin-top: 160px;
+}
+.slideButt {
+	width: 2.5%;
+	flex-wrap: wrap;
+
+}
+.showtime {
+	width: 85%;
+	flex-wrap: wrap;
+}
+.cycleImg {
+	width: 90%;
+	display: flex;
+	margin: auto;
+}
+
+.duckbutt1 {
+	width: 70px;
+}
+.duckbutt2 {
+	width: 70px;
+}
+
+.bones {
+	position: absolute;
+	
+ 	width: 100%;
+ 	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+ 	z-index: 1;
+
+}
+
+.anatabutts {
+	position: absolute;
+	width: 150px;
+	height: 480px;
+	display: flex;
+	flex-direction: column;
+	top: 240px;
+	right: 40px;
+	justify-content: space-around;
+}
+
+#skull {
+	padding: 10px;
+	background-image: url(../images/skull-butts.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: pink;*/
+	width: 150px;
+	height: 100px;
+	text-align: left;
+	color: white;
+}
+
+#hind {
+	padding: 10px;
+	background-image: url(../images/hind-butts.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: orange;*/
+	width: 150px;
+	height: 100px;
+	text-align: left;
+	color: white;
+
+}
+
+#wing {
+	padding: 10px;
+	background-image: url(../images/wing-butts.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: red;*/
+	width: 150px;
+	height: 100px;
+	text-align: left;
+	color: white;
+}
+
+#hind-butts {
+
+}
+
+		#modal-container {
+			display: none;
+			z-index: 7;
+			position: absolute;
+			background-color: rgba(255,255,255,0.7);
+			width: 620px;
+			height: 300px;
+			border: solid rgba(100,100,100,1);
+			border-width: 2px;
+			margin-left: -800px;
+			margin-top: 210px;
+			
+		}
+		#modal-content {
+			font-family: 'EB Garamond', serif;
+			font-size: 16px;
+			width: 600px;
+			height: 300px;
+			margin: 15px;
+
+				
+		}
+
+		#anatContA {
+			width: 590px;
+			height: 300px;
+			margin-bottom: 10px auto;
+
+		}

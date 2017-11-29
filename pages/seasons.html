@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seasons</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style3.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div id="menucontainer">
+		<div id="mainmenu">
+			<a href="../index.html"><img id="menubutts" src="../menu/home.png"></a>
+			<a href="tree.html"><img id="menubutts" src="../menu/tree.png"></a>
+			<a href="seasons.html"><img id="menubutts" src="../menu/seasonal.png"></a>
+			<a href="migration.html"><img id="menubutts" src="../menu/migrate.png"></a>
+			<a href="anatomy.html"><img id="menubutts" src="../menu/menu-anatom.png"></a>
+			<a href="recipes.html"><img id="menubutts" src="../menu/recipes.png"></a>
+			<a href="media.html"><img id="menubutts" src="../menu/media.png"></a>
+		</div>
+	</div>
+	
+	<div>
+		<h1 class="seasonheading">Seasonal Cycle of Ducks</h1>
+	</div>
+	<div class="video">
+			<video loop autoplay class="bgvideo">
+			    <source class="videomig" src="../images/wheatsky.mp4" type="video/mp4">
+			</video>
+	</div>
+	<div class="slides">
+		<div class="slideButt">
+			<a class="slide-click" onclick="slidePush(-1)"><img class="duckbutt1" src="../images/Mallard-left.png">
+			</a>
+		</div>
+		<div class="showtime">
+			<img class="cycleImg" src="../slide1/cycle-1-Nesting.png">
+			<img class="cycleImg" src="../slide1/cycle-2-Brd-Rrng.png">
+			<img class="cycleImg" src="../slide1/cycle-3-post-bred.png">
+			<img class="cycleImg" src="../slide1/cycle-4-molt.png">
+			<img class="cycleImg" src="../slide1/cycle-5-Fall-migr.png">
+			<img class="cycleImg" src="../slide1/cycle-6-winter.png">
+			<img class="cycleImg" src="../slide1/cycle-7-Sprg-migr.png">
+			<img class="cycleImg" src="../slide1/cycle-8-Pre-nest.png">
+		</div>
+		<div class="slideButt">
+			<a class="slide-click" onclick="slidePush(+1)"><img class="duckbutt2" src="../images/Mallard-right.png">
+			</a>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	var imgPosition = 1;
+	displayPlace(imgPosition);
+
+	function slidePush(j) {
+		displayPlace(imgPosition+=j);
+		}
+	function displayPlace(j) {
+		// SLIDE SHOW TIIIIIIIIIME - THis here while loop is creating an array out of the images in lines 36-43
+		// and assigning them a value corresponding to their place in the array. The buttons' functions are also
+		// being declared, adding 1 or subtracting one from the array place (AKA image file) being displayed at 
+		// any given time. While loops are lit.
+		var pos=0;
+		var x = document.getElementsByClassName("cycleImg");
+		if (j > x.length) {imgPosition = 1;}
+		if (j < 1) {imgPosition = x.length;}
+		while(pos < x.length){
+			x[pos].style.display = "none";
+			x[imgPosition-1].style.display = "block";
+			pos++;
+		}
+	}
+
+</script>
+</body>
+</html>

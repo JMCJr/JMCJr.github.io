@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style3.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div id="menucontainer">
+		<div id="mainmenu">
+			<a href="../index.html"><img id="menubutts" src="../menu/home.png"></a>
+			<a href="tree.html"><img id="menubutts" src="../menu/tree.png"></a>
+			<a href="seasons.html"><img id="menubutts" src="../menu/seasonal.png"></a>
+			<a href="migration.html"><img id="menubutts" src="../menu/migrate.png"></a>
+			<a href="anatomy.html"><img id="menubutts" src="../menu/menu-anatom.png"></a>
+			<a href="recipes.html"><img id="menubutts" src="../menu/recipes.png"></a>
+			<a href="media.html"><img id="menubutts" src="../menu/media.png"></a>
+		</div>
+	</div>
+	
+	<div>
+		<h1 class="seasonheading">Ducking Media</h1>
+	</div>
+	<div class="video">
+			<video loop autoplay class="bgvideo">
+			    <source class="videomig" src="../images/media.mp4" type="video/mp4">
+			</video>
+	</div>
+	<div class="slides">
+		<div class="slideButt">
+			<a class="slide-click" onclick="slidePush(-1)"><img class="duckbutt1" src="../images/Mallard-left.png">
+			</a>
+		</div>
+		<div class="showtime">
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/YziVpa8oZDg" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/6XGm_CGzKn4" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/6LMLYrXoBeE" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/2n7UgwWGUeQ" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/_Y8MEAUPlZk" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/blppKS-nz9g" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/hifgIM0_OXw" frameborder="0" gesture="media" allowfullscreen></iframe>
+			<iframe class="cycleImg" width="853" height="480" src="https://www.youtube.com/embed/9UL-h7k6HgA" frameborder="0" gesture="media" allowfullscreen></iframe>
+		</div>
+		<div class="slideButt">
+			<a class="slide-click" onclick="slidePush(+1)"><img class="duckbutt2" src="../images/Mallard-right.png">
+			</a>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	var imgPosition = 1;
+	displayPlace(imgPosition);
+
+	function slidePush(j) {
+		displayPlace(imgPosition+=j);
+		}
+	function displayPlace(j) {
+		
+		var pos=0;
+		var x = document.getElementsByClassName("cycleImg");
+		if (j > x.length) {imgPosition = 1;}
+		if (j < 1) {imgPosition = x.length;}
+		while(pos < x.length){
+			x[pos].style.display = "none";
+			x[imgPosition-1].style.display = "block";
+			pos++;
+		}
+	}
+
+</script>
+</body>
+</html>

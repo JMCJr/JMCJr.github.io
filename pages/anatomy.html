@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anatomy</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style3.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div id="menucontainer">
+		<div id="mainmenu">
+			<a href="../index.html"><img id="menubutts" src="../menu/home.png"></a>
+			<a href="tree.html"><img id="menubutts" src="../menu/tree.png"></a>
+			<a href="seasons.html"><img id="menubutts" src="../menu/seasonal.png"></a>
+			<a href="migration.html"><img id="menubutts" src="../menu/migrate.png"></a>
+			<a href="anatomy.html"><img id="menubutts" src="../menu/menu-anatom.png"></a>
+			<a href="recipes.html"><img id="menubutts" src="../menu/recipes.png"></a>
+			<a href="media.html"><img id="menubutts" src="../menu/media.png"></a>
+		</div>
+	</div>
+	
+	<div>
+		<h1 class="seasonheading">Duck-natomy</h1>
+	</div>
+	<div class="video">
+			<video loop autoplay class="bgvideoanat">
+			    <source class="videoanat" src="../images/anatomy.mp4" type="video/mp4">
+			</video>
+	</div>
+
+	<div class="containanatSKL">
+		<div>
+		<img class= "bones" src="../images/skull-ill.png" alt="skull" usemap="#skullmap">
+		</div>
+
+		<map name="skullmap">
+		  <area id="skbtnA" shape="circle" coords="200,0,82,126" alt="a">
+		</map>
+	
+
+		<div id="modal-container">
+			<div id="modal-content">
+				<p id="anatContA">This is a Duck's Skull <br> a, premaxillary bone; 
+					b, partly ossified internasal septum; 
+					b', pervious part of nostril; 
+					c, end of premaxillary, perforated form numerous branches of second division of the fifth cranial nerve; 
+					d, dentary bone of under mandible; 
+					e, groove of nerves, etc.; 
+					f, a vacuity between dentary and other pieces of the mandible; 
+					g, articular surface; 
+					h, recurved "angle of the jaw;" 
+					i, occipital protuberance; 
+					j, vacuity in supraoccipital bone; 
+					k, muscular impression on back of skull; 
+					l is over the black ear-cavity; 
+					m, post-frontal process; 
+					n, quadrate bone; 
+					o, pterygoid; 
+					p, palatine; 
+					q, quadrato-jugal; 
+					r, jugal; 
+					s, maxillary; 
+					t, fronto-parietal dome of the brain-cavity; u; 
+					u, the lacrymal bone, immense in a duck, nearly completing rim of the orbit by approaching m; v, vomer; 
+					w, supra-orbital depression for the nasal gland; 
+					x, cranio-facial hinge; 
+					y, optic foramen; 
+					z, etc. interorbital vacuities.
+				</p>
+					<a id="close">X</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="anatabutts">
+		<div id="skull">Duck Skull</div>
+		<div id="hind">Duck Hind<br>Leg</div>
+		<div id="wing">Duck Wing</div>
+	</div>
+
+	<script type="text/javascript">
+		
+			// Skull A Modal - Declare the 3 vaiables (the modal body (which is hidden) the modal activating div
+			// (also hidden), and the modal closing button.
+		var modalA = document.getElementById("modal-container");
+		var closeBtn = document.getElementById("close");
+		var skbtnA = document.getElementById("skbtnA");
+				
+			skbtnA.onclick = function() {
+				modalA.style.display = "block";
+			}
+
+			closeBtn.onclick = function() {
+				modalA.style.display = "none";
+			}
+
+
+	</script>
+
+</body>
+</html>
